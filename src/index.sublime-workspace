@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"l",
+				"link\tTag"
+			],
+			[
 				"p",
 				"photo"
 			],
@@ -18,10 +22,6 @@
 			[
 				"in",
 				"input\tTag"
-			],
-			[
-				"l",
-				"li\tTag"
 			],
 			[
 				"di",
@@ -59,7 +59,25 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5206,
+				"buffer_size": 5261,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/bogda/Downloads/index__01.html",
+			"settings":
+			{
+				"buffer_size": 2380,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -77,6 +95,14 @@
 		"selected_items":
 		[
 			[
+				"",
+				"File: Save All"
+			],
+			[
+				"Package Control: local",
+				"Package Control: Install Local Dependency"
+			],
+			[
 				"emmet",
 				"Emmet: Select Next Item"
 			],
@@ -91,10 +117,6 @@
 			[
 				"in",
 				"Install Package Control"
-			],
-			[
-				"",
-				"About"
 			]
 		],
 		"width": 0.0
@@ -121,8 +143,8 @@
 	},
 	"file_history":
 	[
-		"/C/Users/bogda/Downloads/index__01.html",
-		"/C/Program Files (x86)/Sublime Text 3/sublime_text.exe"
+		"/C/Program Files (x86)/Sublime Text 3/sublime_text.exe",
+		"/C/Users/bogda/Downloads/index__01.html"
 	],
 	"find":
 	{
@@ -166,15 +188,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5206,
+						"buffer_size": 5261,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								907,
-								907
+								99,
+								99
 							]
 						],
 						"settings":
@@ -183,10 +205,67 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 162.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/bogda/Downloads/index__01.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2226,
+								2289
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -268,7 +347,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
