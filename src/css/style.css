@@ -290,7 +290,7 @@ nav{
 
 .footer{
 	width: 100%;
-	height: 600px;
+	height: 630px;
 	background: url(../img/footer2.png) 100%;
 
 }
@@ -298,31 +298,93 @@ nav{
 	font-size: 28px;
 	color: #fff;
 	text-align: center;
-	padding-top: 103px;
+	padding-top: 30px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.f_div1{
-	padding: 0px 100px 0px 100px;
-	float: left;
-
-}.fdiv11{
-	float: left;
-	width: 215px;
-	padding: 100px 45px 95px 45px;
-	text-align: center;
-	margin-left: 100px
-	color: #fff;
-}
-.fdiv11 img{
-	padding-bottom: 30px;
-}
 
 .footer p{
+	margin-bottom: 50px;
 	text-align: center;
 	font-size: 15px;
 	color: #fff;
-	padding-top: 25px;
+	padding-top: 20px;
+}
 
+.fdiv1{
+	width: 40%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.fdiv11{
+	float: left;
+	height: 100%;
+	width: 33%;
+	text-align: center;
+	color: #fff;
+}
+
+.fdiv2{
+	float: none;
+	width: 40%;
+	height: 120px;
+	margin: 0 auto;
+}
+
+.fdiv2 h4{
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	margin: 5px;
+
+}
+
+.finput{
+	height: 30px;
+	width: 49%;
+	display: inline-block;
+}
+#mail{
+	position: relative;
+	left: 7px;
+}
+
+.fdiv2 textarea{
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.clup{
+	background-color: transparent;
+	height: 40px;
+	width: 90px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 13px;
+}
+.clupdiv{
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.fdiv3{
+	float: none;
+	width: 40%;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.fdiv3 img{
+	padding: 20px;
+}
+
+.cr{
+	padding: 20px;
 }
 
