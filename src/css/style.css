@@ -6,6 +6,7 @@ nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
 }
 
 .logo{
@@ -15,6 +16,13 @@ nav{
 	
 	padding-left: 150px;
 	float: left;
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
+}
+main{
+	width: 100%;
+	height: 100%;
 }
 
 .menu{
@@ -31,10 +39,31 @@ nav{
 	margin-right: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
-}	
+	
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+	animation: topshift 0.4s ease forwards;
+    opacity: 0;
+}
+.menu li a{
+	transition: all, 0.1s;
+	color: #fff;
+	transform: scale(1);
+	display: inline-block;
+}
+.menu li a:visited{
+	color: #fff;
+}
+.menu li a:hover{
+	color: #d17700;
+}
+.menu li a:active{
+	transform: scale(1.1);
+}
+
 .main{
 	width: 100%;
-	height: calc(100% - 60px);
+	height: 100%;
 	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg2.jpg) center/cover no-repeat;
 }
 
@@ -43,6 +72,9 @@ nav{
 	margin: 210px 0px 0px 200px;
 	color: #2c384a;
 	text-align: center;
+    -webkit-animation: titlemove 2.4s forwards;
+    -o-animation: titlemove 2.4s forwards;
+    animation: titlemove 2.4s forwards;
 }
 
 .title__conteiner h1{
@@ -65,14 +97,69 @@ nav{
 	font-size: 13px;
 	padding: 0px 16px;
 	margin: 58px 28px 0px 14px;
+	transition: all, 0.2s;
+	transform: scale(1);
+}
+.title__conteiner input:hover{
+	background: #344051;
+	color: #fff;
+}
+.title__conteiner input:active{
+	transform: scale(1.1);
+}
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes topshift{
+	from{
+		margin-top: -80px;
+        opacity: 0;
+        
+    }
+	to{
+		margin-top: 0px;
+        opacity: 1;
+	}
+}
+
+@keyframes titlemove{
+	from{
+		margin-left: -500px;
+        
+    }
+	to{
+		margin-left: 200px;
+        /*opacity: 1;*/
+	}
+}
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2s;
 }
 
 .obomne{
-	height: 724px;
+	height: 800px;
 	width: 733px;
 	text-align: center;
-	margin: auto;
+	margin: auto;    
 }
+
 
 .obomne img{
 	margin: 20px;
@@ -86,6 +173,11 @@ nav{
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.obomne h3:hover{
+	/*font-size: 35px;*/
+	transform: scale(1.1);
+}
+
 
 .obomne p{
 	color: #6d7682;
@@ -103,7 +195,17 @@ nav{
 	font-size: 13px;
 	text-align: left;
 
-	padding: 10px 5px 10px 30px;	
+	padding: 10px 5px 10px 30px;
+	transform: scale(1);
+	transition: all, 0.2s;
+	
+}
+.obomne input:active{
+	transform: scale(1.1);
+}
+.obomne input:hover{
+	background: #344051;
+	color: #fff;
 }
 
 .what{
@@ -125,6 +227,9 @@ nav{
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.what h3:hover{
+	transform: scale(1.1);
+}
 
 .block{
 	float: left;
@@ -132,6 +237,12 @@ nav{
 	padding: 100px 45px 95px 45px;
 	text-align: center;
 	margin-left: 100px;
+}
+.block img:hover{
+	transform: scale(1.1);
+}
+.block h4:hover{
+	transform: scale(1.1);
 }
 
 .block h4{
@@ -162,6 +273,9 @@ nav{
 	padding-top: 103px;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+.keys h3:hover{
+	transform: scale(1.1);
 }
 .keys_p1{
 	text-align: center;
@@ -199,6 +313,10 @@ nav{
 	padding: 0px 10px;	
 	margin-top: 10px;
 }
+.client input:active{
+	transform: scale(1.1);
+}
+
 .client h4{
 	text-transform: uppercase;
 	line-height: 25px;
@@ -213,7 +331,7 @@ nav{
 
 .raschet{
 	width: 700px;
-	height: 500px;
+	height: 700px;
 	margin: 100px 300px 0px 300px;
 }
 
@@ -221,6 +339,10 @@ nav{
 	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
+	padding: 50px; 
+}
+.raschet_main:hover{
+	transform: scale(1.1);
 }
 
 .raschet_h3{
@@ -231,6 +353,11 @@ nav{
 	line-height: 30px;
 	/*margin-left: 100px;*/
 }
+/*.raschet_h3:hover{
+	transform: scale(1.1);
+	text-align: left;
+}*/
+
 .select{
 	width: 700px;
 	height: 35px;
@@ -265,6 +392,9 @@ nav{
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.stat h3:hover{
+	transform: scale(1.1);
+}
 .otziv{
 	width: 100%;
 	height: 580px;
@@ -278,6 +408,9 @@ nav{
 	padding-top: 103px;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+.otziv h3:hover{
+	transform: scale(1.1);
 }
 .otziv p{
 	font-size: 15px;
@@ -301,6 +434,9 @@ nav{
 	padding-top: 30px;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+.footer h3:hover{
+	transform: scale(1.1);
 }
 
 .footer p{
@@ -370,6 +506,13 @@ nav{
 	text-align: center;
 	margin: 0 auto;
 	padding: 10px;
+}
+.footer input:active{
+	transform: scale(1.1);
+}
+.footer input:hover{
+	background: #fff;
+	color: black;
 }
 
 .fdiv3{
