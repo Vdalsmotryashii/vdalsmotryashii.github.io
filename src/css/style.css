@@ -1,3 +1,87 @@
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+
+/*там, выше, анимация загрузки*/
+
+
+
+@font-face {
+	font-family: 'Conv_framd';
+	src: url('fonts/framd.eot');
+	src: local('☺'), url('fonts/framd.woff') format('woff'), url('fonts/framd.ttf') format('truetype'), url('fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
 	font-family: Arial, sent-serif;
 }
@@ -7,18 +91,19 @@ nav{
 	height: 60px;
 	background: #344051;
 	position: fixed;
+    z-index: 10;
 }
 
 .logo{
 	color: #fff;
-	font-size: 28px;
+	font-size: 17px;
 	line-height: 60px;
 	
-	padding-left: 150px;
 	float: left;
 	-webkit-animation: comming 2s ease;
 	-o-animation: comming 2s ease;
 	animation: comming 2s ease;
+	font-family: 'FranklinGot';
 }
 main{
 	width: 100%;
@@ -26,18 +111,29 @@ main{
 }
 
 .menu{
-	line-height: 60px
-	float: left;
-	padding-left: 500px;
+	line-height: 60px;
+    float: left;
 	color: #fff;
 }
-
+.custom-css3{
+    font-size: 20px;
+    color: red;
+    transition: all 0.5s ease;
+    animation: rotate 3s linear infinite;
+    margin-right: 10px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+    animation: revers;
+  }
+}
 .menu li{
 	float: left;
 	line-height: 60px;
 	color: #fff;
-	margin-right: 40px;
-	font-size: 16px;
+	margin-right: 20px;  /*было 48px. не влезало*/
+	font-size: 14px;
 	text-transform: uppercase;
 	
     -webkit-animation: topshift 0.4s ease forwards;
@@ -50,6 +146,7 @@ main{
 	color: #fff;
 	transform: scale(1);
 	display: inline-block;
+    text-decoration: none;
 }
 .menu li a:visited{
 	color: #fff;
@@ -60,6 +157,9 @@ main{
 .menu li a:active{
 	transform: scale(1.1);
 }
+.white-btn:visited{
+	color: white;
+}
 
 .main{
 	width: 100%;
@@ -67,27 +167,30 @@ main{
 	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg2.jpg) center/cover no-repeat;
 }
 
-.title__conteiner{
+.title__container{
 	float: left;
-	margin: 210px 0px 0px 200px;
+	/*margin: 210px 0px 0px 200px;*/
 	color: #2c384a;
 	text-align: center;
+    width: 100%;
+    
     -webkit-animation: titlemove 2.4s forwards;
     -o-animation: titlemove 2.4s forwards;
     animation: titlemove 2.4s forwards;
 }
 
-.title__conteiner h1{
+.title__container h1{
+    font-family: Arial, sans-serif;
 	font-size: 60px;
-	font-weight: bold;
+	font-weight: 600;
 }
-.title__conteiner h4{
-	margin-top: 40px;
-	font-size: 22px
+.title__container h4{
+	/*margin-top: 40px;*/
+	font-size: 22px;
 	color: #79818d;
 }
 
-.title__conteiner input{
+.title__container input{
 	height: 40px;
 	text-align: center;
 	border: 2px solid #6d7682;
@@ -100,11 +203,11 @@ main{
 	transition: all, 0.2s;
 	transform: scale(1);
 }
-.title__conteiner input:hover{
+.title__container input:hover{
 	background: #344051;
 	color: #fff;
 }
-.title__conteiner input:active{
+.title__container input:active{
 	transform: scale(1.1);
 }
 @keyframes comming{
@@ -133,7 +236,7 @@ main{
         
     }
 	to{
-		margin-left: 200px;
+		margin-left: 0px;
         /*opacity: 1;*/
 	}
 }
@@ -154,8 +257,8 @@ main{
 }
 
 .obomne{
-	height: 800px;
-	width: 733px;
+	/*height: 800px;*/
+	/*width: 733px;*/
 	text-align: center;
 	margin: auto;    
 }
@@ -206,17 +309,19 @@ main{
 .obomne input:hover{
 	background: #344051;
 	color: #fff;
+    
 }
-
 .what{
 	background: url(../img/bg3.jpg);
-	height: 528px;
+	height: 523px;
+    width: 100%;
+    margin-top: 50px;
 }
 
 .cherta img{
 	display: block;
     margin: 0 auto; 
-	padding-top: 20px;
+	padding: 20px 0px 50px 0px;
 }
 
 .what h3{
@@ -230,13 +335,21 @@ main{
 .what h3:hover{
 	transform: scale(1.1);
 }
+.picdiv{
+    height: 100%;
+    width: 100%;
+    min-height: 60px;
+}
 
 .block{
-	float: left;
-	width: 215px;
-	padding: 100px 45px 95px 45px;
+	/*float: left;*/
+	/*width: 215px;*/
+	/*padding: 100px 45px 95px 45px;*/
 	text-align: center;
-	margin-left: 100px;
+	/*margin-left: 100px;*/
+}
+.block img{
+    margin: 1px;
 }
 .block img:hover{
 	transform: scale(1.1);
@@ -246,15 +359,16 @@ main{
 }
 
 .block h4{
+    font-size: 17px;
 	white-space: nowrap;
 	color: #cf7600;
 	font-weight: bold;
 	text-align: center;
-	padding: 20px 5px 5px 5px;
+    margin: 30px 0px 30px 0px;
+	/*padding: 20px 5px 5px 5px;*/
 }
 .block p{
 	color: #6d7682;
-
 }
 
 .keys {
@@ -291,7 +405,6 @@ main{
 	width: 1000px;
 	height: 590px;
 	margin-left: 180px;
-	
 }
 
 .client{
@@ -381,6 +494,7 @@ main{
 
 .stat{
 	background: url(../img/keyboard.jpg);
+	background-attachment: fixed; 
 	width: 100%;
 	height: 500px;
 }
@@ -418,7 +532,7 @@ main{
 	color: #6d7682;
 }
 .punkt{
-	margin-top: 50px
+	margin-top: 50px;
 }
 
 .footer{
@@ -530,4 +644,22 @@ main{
 .cr{
 	padding: 20px;
 }
-
+@media (max-width: 991px){
+    .title__container, .title__container h4, .title__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .title__container input{
+        border: 2px solid #fff;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+    }
+}

@@ -18,99 +18,200 @@
 
 	<title>Андрей Браун - Веб-разработчик</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">   
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- preloader -->
+
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+
+<!-- preloader -->
+
 	<header>
 		<nav>
-			<div class="logo">Андрей Браун</div>
-			<div class="menu">
-				<ul>
-				<li><a href="#">обо мне</a></li>
-				<li><a href="#">услуги</a></li>
-				<li><a href="#">кейсы</a></li>
-				<li><a href="#">прайс</a></li>
-				<li><a href="#">отзывы</a></li>
-				<li><a href="#">контакты</a></li>
-				</ul>	
-			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Андрей Браун</div></div>
+					<div class="px-0 py-0 col-xxl-6 col-xl-7 col-lg-8 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">
+						<ul>
+						<li><a href="#">обо мне</a></li>
+						<li><a href="#">услуги</a></li>
+						<li><a href="#">кейсы</a></li>
+						<li><a href="#">прайс</a></li>
+						<li><a href="#">отзывы</a></li>
+						<li><a href="#">контакты</a></li>
+						</ul>
+					    </div>
+				    </div>
+				    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+				    <div class="dropdown">
+          <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            навигация
+          </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">обо мне</a></li>
+    <li><a class="dropdown-item" href="#">услуги</a></li>
+    <li><a class="dropdown-item" href="#">кейсы</a></li>
+    <li><a class="dropdown-item" href="#">прайс</a></li>
+    <li><a class="dropdown-item" href="#">отзывы</a></li>
+    <li><a class="dropdown-item" href="#">контакты</a></li>
+  </ul>
+</div>
+				    </div>
+			    </div>
+			
+            </div>
 		</nav>
 	</header>
 
 	<main>	
 		<section class="main">
-			<div class="title__conteiner">
-				<h1>Привет <br> Я Андрей Браун </h1>
-				<h4>Фул стек веб-разработчик</h4>
-				<input type="button" value=" Обо мне ">
-				<input type="button" value=" Мои работы ">
-			</div>
+		    <div class="container h-100">
+                <div class="row align-items-center h-100">
+                   <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title__container mt-5">
+				            <h1>Привет <br> Я Андрей Браун </h1>
+				            <h4><i class="fa fa-css3 custom-css3" aria hidden="true"></i>Фул стек веб-разработчик</h4>
+                            <input type="button" value=" Обо мне ">
+                            <input type="button" value=" Мои работы ">
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</section>
 
 <section class="obomne">
 	
-	<h3 class="animate__animated animate__rubberBand">Обо мне</h3>
-	
-	<div class="cherta"><img src="img/cherta.png" alt="cherta"></div>
-	<img src="img/boy_small.jpg" alt="boy_small">
-	
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi et repellat adipisci, quis deserunt commodi fugiat culpa, debitis unde, sed! Vitae deleniti quae, ut sit, quia inventore optio non ea.</p>
-
-	<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sed adipisci laudantium iure velit consequatur voluptatem quod earum vel labore esse, reiciendis error, maiores qui iste veniam totam excepturi fugit. Laudantium, magnam.</p>
-
-	<input type="button" value=" Скачать резюме ">
+	<div class="container">
+       
+        <div class="row">
+            <div class="col">
+                <h3 class="animate__animated animate__rubberBand">Обо мне</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col"> 
+                <div class="cherta">
+                    <img src="img/cherta.png" alt="cherta">
+                </div>
+            </div>
+        </div>
+               
+        <div class="row">
+                <div class="col mt-5">      
+                    <img src="img/boy_small.jpg" alt="boy_small">
+                </div>
+        </div>
+            
+        <div class="row">
+            <div class="col"> <!--px? margin?-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi et repellat adipisci, quis deserunt commodi fugiat culpa, debitis unde, sed! Vitae deleniti quae, ut sit, quia inventore optio non ea.</p>
+<!-- как сделать эти абзацы поуже? чтобы не так широко на странице отображались-->
+                <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sed adipisci laudantium iure velit consequatur voluptatem quod earum vel labore esse, reiciendis error, maiores qui iste veniam totam excepturi fugit. Laudantium, magnam.</p>
+            </div>
+        </div>
+           
+        <div class="row">
+                <div class="col">
+                    <input type="button" value=" Скачать резюме ">
+                </div>
+        </div>
+    </div>
 </section>
 
 <section class="what">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h3>Что я умею?</h3>   
+          </div>   
+        </div>
+                
 
-	<h3>Что я умею?</h3>
-	
-	<div class="cherta"><img src="img/cherta.png" alt="cherta"></div>
-
-	<div class="block">
-		<img src="img/nout.png" alt="nout.png">
-	<h4>Веб дизайн</h4>
-	<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus quia, libero hic cupiditate numquam.</p>
-	</div>
-
-	<div class="block">
-		<img src="img/simbol.png" alt="simbol">
-	<h4>Разработки</h4>
-	<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus quia, libero hic cupiditate numquam.</p>
-	</div>
-
-	<div class="block">
-		<img src="img/space.png" alt="space.png">
-	<h4>CEO-оптимизация</h4>
-	<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus quia, libero hic cupiditate numquam.</p>
-	</div>
-
-	<div class="block">
-		<img src="img/megafon.png" alt="megafon.png">
-	<h4>Маркетинг</h4>
-	<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus quia, libero hic cupiditate numquam.</p>
-	</div>
+    <div class="row">
+          <div class="col ">
+            <div class="cherta"><img src="img/cherta.png" alt="cherta"></div>   
+          </div>   
+    </div>
+               
+       <div class="row gx-10">
+       <div class="col">
+           <div class="block">
+               <div class="picdiv"><img src="img/nout.png" alt="nout.png"></div>
+                <h4>Веб дизайн</h4>
+                <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus quia, libero hic cupiditate numquam.</p>
+            </div>
+       </div>
+       
+       <div class="col">
+            <div class="block">
+                <div class="picdiv"><img src="img/simbol.png" alt="simbol"></div>
+                <h4>Разработки</h4>
+                <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus quia, libero hic cupiditate numquam.</p>
+            </div>
+       </div>
+       
+       <div class="col">
+            <div class="block">
+                <div class="picdiv"><img src="img/space.png" alt="space.png"></div>
+                <h4>CEO-оптимизация</h4>
+                <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus quia, libero hic cupiditate numquam.</p>
+            </div>
+       </div>
+       
+       <div class="col">
+           <div class="block">
+               <div class="picdiv"><img src="img/megafon.png" alt="megafon.png"></div>
+                <h4>Маркетинг</h4>
+                <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus quia, libero hic cupiditate numquam.</p>
+            </div>
+       </div>   
+    </div>        
+                
+</div>
 </section>
 
 <section class="keys">
-
-	<h3>Кейсы</h3>
-	<div class="cherta"><img src="img/cherta.png" alt="cherta"></div>
-	<p class="keys_p1">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quae, dignissimos dolorem velit!</p>
-
-	<div class="keys_div"></div>
-	<div class="client">
-		<h4>CLIENT</h4>
-		<p>какая-то компания</p>
-		<h4>WEBSITE:<br></h4>
-		<p>www.blablabla.com</p>
-		<input type="button" value=" VISIT LIVE SITE ">
-	</div>
-
-	<div class="name">
-		<h4>Название проекта</h4>
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quae dolorum officia dicta voluptatibus tempore impedit. Assumenda, modi. Distinctio amet illum repellendus deleniti corrupti velit ab suscipit veniam voluptatibus consectetur a quasi, magnam architecto voluptatem dolor, quo dolore accusamus, vero aspernatur. Fuga nulla at quam vitae. Amet optio molestiae eligendi?</p>
-	</div>
+    <div class="container">
+	    <div class="row">
+	        <h3>Кейсы</h3>
+	    </div>
+        <div class="row">
+            <div class="cherta"><img src="img/cherta.png" alt="cherta"></div>
+        </div>
+	    <div class="row">
+	        <p class="keys_p1">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quae, dignissimos dolorem velit!</p>
+	    </div>
+	    <div class="row">
+	        <div class="keys_div"></div> 
+	    </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="client">
+                    <h4>CLIENT</h4>
+                    <p>какая-то компания</p>
+                    <h4>WEBSITE:<br></h4>
+                    <p>www.blablabla.com</p>
+                    <input type="button" value=" VISIT LIVE SITE ">
+                </div>
+            
+                <div class="name">
+                    <h4>Название проекта</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quae dolorum officia dicta voluptatibus tempore impedit. Assumenda, modi. Distinctio amet illum repellendus deleniti corrupti velit ab suscipit veniam voluptatibus consectetur a quasi, magnam architecto voluptatem dolor, quo dolore accusamus, vero aspernatur. Fuga nulla at quam vitae. Amet optio molestiae eligendi?</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="raschet">
@@ -158,19 +259,19 @@
 	</div>
 
 	<div class="block">
-		<img src="img/brackets.jpg" alt="brackets.jpg">
+		<img src="img/brackets.png" alt="brackets.png">
 		<h4>4,600</h4>
 		<p>проектов завершено</p>
 	</div>
 
 	<div class="block">
-		<img src="img/galka.jpg" alt="galka.jpg">
+		<img src="img/galka.png" alt="galka.png">
 		<h4>340</h4>
 		<p>проектов завершено</p>
 	</div>
 
 	<div class="block">
-		<img src="img/cubok.jpg" alt="cubok.jpg">
+		<img src="img/cubok.png" alt="cubok.png">
 		<h4>23</h4>
 		<p>наград получено</p>
 	</div>
@@ -241,6 +342,20 @@
 	<P>Copyright 2021 Андрей Браун. Design by Web</P>
 	</div>
 </footer>
-</main>	
+</main>
+
+<!-- preloader -->
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+<!-- preloader -->
+
+<script src="js/bootstrap.bundle.min.js"></script>	
 </body>
 </html>
