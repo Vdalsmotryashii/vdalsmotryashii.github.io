@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
 <!-- preloader -->
 
 <header>
-    <nav>
+   <!--<nav>
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-xxl-2 col-lg-3 col-7">
@@ -43,11 +43,11 @@
                     <div class="menu ml-5 pl-5 w-100" id="menuID">
                         <ul>
                             <li><a class="active" href="#obomneID">обо мне</a></li>
-                            <li><a class="" href="#whatID">услуги</a></li>
-                            <li><a class="" href="#keysID">кейсы</a></li>
-                            <li><a class="" href="#raschetID">прайс</a></li>
-                            <li><a class="" href="#otzivID">отзывы</a></li>
-                            <li><a class="" href="#footerID">контакты</a></li>
+                            <li><a class="active" href="#whatID">услуги</a></li>
+                            <li><a class="active" href="#keysID">кейсы</a></li>
+                            <li><a class="active" href="#raschetID">прайс</a></li>
+                            <li><a class="active" href="#otzivID">отзывы</a></li>
+                            <li><a class="active" href="#footerID">контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -70,7 +70,50 @@
             </div>
 
         </div>
-    </nav>
+    </nav>-->
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2a3e51; position: fixed">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Андрей Браун</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" text-align-right>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#obomneID">Обо мне</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#whatID">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#keysID">Кейсы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#raschetID">Прайс</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#otzivID">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footerID">Контакты</a>
+        </li>
+        
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#obomneID">Обо мне</a></li>
+            <li><a class="dropdown-item" href="#whatID">Услуги</a></li>
+            <li><a class="dropdown-item" href="#keysID">Кейсы</a></li>
+            <li><a class="dropdown-item" href="#raschetID">Прайс</a></li>
+            <li><a class="dropdown-item" href="#otzivID">Отзывы</a></li>
+            <li><a class="dropdown-item" href="#footerID">Контакты</a></li>
+          </ul>
+        </li>
+  
+    </div>
+  </div>
+</nav>
 </header>
 
 <main>
@@ -82,8 +125,8 @@
                 <div class="title__container mt-5">
                     <h1>Привет <br> Я Андрей Браун </h1>
                     <h4><i class="fa fa-css3 custom-css3" aria ></i>Фул стек веб-разработчик</h4>
-                    <input type="button" value=" Обо мне " form="#obomneID">
-                    <input type="button" value=" Мои работы " form="#keysID">
+                    <input type="button" value=" Обо мне ">
+                    <input type="button" value=" Мои работы ">
                 </div>
             </div>
         </div>
@@ -110,7 +153,7 @@
 
         <div class="row">
                 <div class="col mt-5">
-                    <img src="img/boy_small.jpg" alt="boy_small">
+                    <img class="element-animation" src="img/boy_small.jpg" alt="boy_small">
                 </div>
         </div>
 
@@ -207,32 +250,32 @@
             <!--<div class="col">
                 <img class="w-100" src="img/screen.jpg" alt="screen.jpg">
             </div>-->
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="img/screen.jpg" class="d-block w-100" alt="screen.jpg">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="img/screen2.png" class="d-block w-100" alt="screen2.png">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="img/screen3.jpg" class="d-block w-100" alt="screen3.jpg">
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Предыдущий</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Следующий</span>
-                      </button>
-                    </div>
+                                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                  <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  </div>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="img/screen.jpg" class="d-block w-100" alt="screen.jpg">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="img/screen2.png" class="d-block w-100" alt="screen2.png">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="img/screen3.jpg" class="d-block w-100" alt="screen3.jpg">
+                                    </div>
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Предыдущий</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Следующий</span>
+                                  </button>
+                                </div>
         </div>
         <div class="row">
             <div class="col-xl-2 order-xl-first col-lg-2 order-lg-first col-md-2 order-md-last col-sm-2 order-sm-last col-2 order-last">
@@ -247,7 +290,7 @@
             <div class="col-xl-10 order-xl-last col-lg-10 order-lg-last col-md-12 order-md-first col-sm-12 order-sm-first col-12 order-first">
                 <div class="name">
                     <h4>Название проекта</h4>
-                    <p class="element-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quae dolorum officia dicta voluptatibus tempore impedit. Assumenda, modi. Distinctio amet illum repellendus deleniti corrupti velit ab suscipit veniam voluptatibus consectetur a quasi, magnam architecto voluptatem dolor, quo dolore accusamus, vero aspernatur. Fuga nulla at quam vitae. Amet optio molestiae eligendi?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quae dolorum officia dicta voluptatibus tempore impedit. Assumenda, modi. Distinctio amet illum repellendus deleniti corrupti velit ab suscipit veniam voluptatibus consectetur a quasi, magnam architecto voluptatem dolor, quo dolore accusamus, vero aspernatur. Fuga nulla at quam vitae. Amet optio molestiae eligendi?</p>
                 </div>
             </div>
         </div>
@@ -266,11 +309,11 @@
         <div class="row">
             <div class="col">
                 <div><h3 class="raschet_h3 text-start">тип сайта</h3></div>
-                <select id="siteR" class="select">
-                  <option >Выберите пункт...</option>
-                  <option value="100">сайт-визитка</option>
-                  <option value="200">лендинг</option>
-                  <option value="300">интернет-магазин</option>
+                <select class="select">
+                  <option>Выберите пункт...</option>
+                  <option>Пункт 1</option>
+                  <option>Пункт 2</option>
+                  <option>Пункт 3</option>
                 </select>
             </div>
         </div>
@@ -278,11 +321,11 @@
         <div class="row">
             <div class="col">
                 <h3 class="raschet_h3 text-start">дизайн</h3>
-                <select id="designR" class="select">
+                <select class="select">
                   <option>Выберите пункт...</option>
-                  <option value="50">простой</option>
-                  <option value="60">сложный</option>
-                  <option value="70">WOW-дизайн</option>
+                  <option>Пункт 1</option>
+                  <option>Пункт 2</option>
+                  <option>Пункт 3</option>
                 </select>
             </div>
         </div>
@@ -291,10 +334,11 @@
            <div class="col">
                 <h3 class="raschet_h3 text-start">адаптивность</h3>
 
-                <select id="adaptabilityR" class="select">
+                <select class="select">
                   <option>Выберите пункт...</option>
-                  <option value="0">не адаптивный</option>
-                  <option value="10">адаптивный</option>
+                  <option>Пункт 1</option>
+                  <option>Пункт 2</option>
+                  <option>Пункт 3</option>
                 </select>
 
             </div>
@@ -306,20 +350,19 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-2"><p>стоимость: </p></div>
-                <div class="col-2" id="js-result"></div>
-                    
-            
+        <div class="row">
+            <div class="col text-start">
+                <p>сроки:</p>
+            </div>
         </div>
         <div class="row">
-            <div class="col-2">
-                <p>сроки: <div id="js-result2"></div></p>
+            <div class="col text-start">
+                <p>стоимость:</p>
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <input id="js-button" type="button" value=" оставить заявку ">
+                <input type="button" value=" оставить заявку ">
             </div>
         </div>
     </div>
@@ -342,7 +385,7 @@
             <div class="col">
                 <div class="block">
                     <img src="img/smile.png" alt="smile.png">
-                    <h4 class="benefits__number">120</h4>
+                    <h4>120</h4>
                     <p>счастливые клиенты</p>
                 </div>
             </div>
@@ -350,7 +393,7 @@
             <div class="col">
                 <div class="block">
                     <img src="img/brackets.png" alt="brackets.png">
-                    <h4 class="benefits__number">4,600</h4>
+                    <h4>4,600</h4>
                     <p>проектов завершено</p>
                 </div>
             </div>
@@ -358,7 +401,7 @@
             <div class="col">
                 <div class="block">
                     <img src="img/galka.png" alt="galka.png">
-                    <h4 class="benefits__number">340</h4>
+                    <h4>340</h4>
                     <p>проектов завершено</p>
                 </div>
             </div>
@@ -366,7 +409,7 @@
             <div class="col">
                 <div class="block">
                     <img src="img/cubok.png" alt="cubok.png">
-                    <h4 class="benefits__number">23</h4>
+                    <h4>23</h4>
                     <p>наград получено</p>
                 </div>
             </div>
@@ -396,7 +439,7 @@
 
         <div class="row">
             <div class="col">
-                    <p class="element-animation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
                     <p>Максим В. директор АО Газпрём</p>
             </div>
         </div>
@@ -496,7 +539,7 @@
             </div>
         </div>
 
-        <div class="row mt-5 element-animation">
+        <div class="row mt-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385398.589857371!2d28.73198908987066!3d41.00498227392235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2z0KHRgtCw0LzQsdGD0LssINCi0YPRgNGG0LjRjw!5e0!3m2!1sru!2sru!4v1640104713689!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
@@ -524,9 +567,8 @@
 </script>
 <!-- preloader -->
 
-
 <script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/myScrypt.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
