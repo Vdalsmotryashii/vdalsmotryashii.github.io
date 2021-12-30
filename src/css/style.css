@@ -165,6 +165,22 @@ main{
     transform: scale(1.1);
     color: #d17700;
 }
+
+
+
+/*.active{
+    color: #d17700;
+}*/
+section.active2 {   /*animation action menu*/
+
+}
+
+.menu li a.active2 {  /*animation action menu*/
+    color: #d17700;
+}
+
+
+
 .white-btn:visited{
     color: white;
 }
@@ -303,7 +319,7 @@ main{
 
 .element-animation.show-animation{
     opacity: 1;
-    transition: opasity 2s;
+    transition: opacity 2s;
 }
 
 
@@ -727,4 +743,8 @@ main{
 .mycontact:hover{
     text-decoration: none;
     color: red;
+}
+
+.benefits__number {
+    opacity: 0;
 }
