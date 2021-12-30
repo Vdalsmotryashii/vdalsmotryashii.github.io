@@ -1,5 +1,21 @@
 "use strict"
 
+new WOW().init();
+
+
+//magnific-popup
+$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
+
+
+$('.test-popup-link').magnificPopup({
+  type: 'image'
+  // other options
+});
+
+
+
 //плавный скролл
 		$(document).ready(function(){
 			$("#menuID").on("click","a", function (event) {
@@ -11,7 +27,7 @@
 				
 				$('body,html').animate({scrollTop: top}, 1000);
 			});
-		});
+		})
 
 
 
@@ -28,10 +44,10 @@ $(document).ready(function(){
 function onEntry (enrty){
 	enrty.forEach(change => {
 		if (change.isIntersecting){
-			change.target.classList.add('.show-animation');
+			change.target.classList.add('show-animation');
 		}
 	});
-}
+};
 
 
 

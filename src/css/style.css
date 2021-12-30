@@ -300,7 +300,7 @@ main{
     opacity: 0;
 }
 
-.element-animation.show-animation{
+.show-animation{
     opacity: 1;
     transition: opasity 2s;
 }
@@ -354,9 +354,10 @@ main{
     text-transform: uppercase;
     font-weight: bold;
 }
-.what h3:hover{
+/*.what h3:hover{
     transform: scale(1.1);
-}
+}*/
+
 .picdiv{
     height: 100%;
     width: 100%;
@@ -716,4 +717,13 @@ main{
         position: absolute;
         background: rgba(0,0,0,0.4);
     }
+}
+.mycontact{
+    text-decoration: none;
+    color: white;
+
+}
+.mycontact:hover{
+    text-decoration: none;
+    color: red;
 }
