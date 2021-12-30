@@ -12,6 +12,9 @@ new WOW().init();
 
 // });
 
+
+
+
 //плавный скролл
 //		$(document).ready(function(){
 //			$("#menuID").on("click","a", function (event) {
@@ -29,21 +32,21 @@ new WOW().init();
 
 
 // анимация появления параграфа
-//$(document).ready(function(){
-//	let options = {threshold: [1]};
-//	let observer = new IntersectionObserver(onEntry, options);
-//	let elements = $('.element-animation');
-//	elements.each((i,el) => {
-//		observer.observe(el);
-//	});
-// });
-//function onEntry (enrty){
-//	enrty.forEach(change => {
-//		if (change.isIntersecting){
-//			change.target.classList.add('show-animation');
-//		}
-//	});
-//};
+$(document).ready(function(){
+	let options = {threshold: [1]};
+	let observer = new IntersectionObserver(onEntry, options);
+	let elements = $('.element-animation');
+	elements.each((i,el) => {
+		observer.observe(el);
+	});
+ });
+function onEntry (enrty){
+	enrty.forEach(change => {
+		if (change.isIntersecting){
+			change.target.classList.add('show-animation');
+		}
+	});
+};
 
 
 
