@@ -284,10 +284,10 @@ main{
     text-transform: uppercase;
     font-weight: bold;
 }
-.obomne h3:hover{
-    /*font-size: 35px;*/
+/*.obomne h3:hover{
+   font-size: 35px;
     transform: scale(1.1);
-}
+}*/
 
 
 .obomne p{
