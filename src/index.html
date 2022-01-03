@@ -76,6 +76,9 @@
 
 <main>
 
+
+
+
 <section class="main">
     <div class="container h-100">
         <div class="row align-items-center h-100">
@@ -92,6 +95,30 @@
 </section>
 
 <section class="obomne section" id="obomneID">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Скидка! нажми здесь!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Скидка 50% на первый заказ!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Только сейчас и только для тебя! Скидка на первый заказ целых 50%. Жми кнопу "сделать заказ".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Вернуться</button>
+        <a class="btn btn-primary close" href="#raschetID" data-dismiss="modal" target="_blank">Сделать заказ</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <div class="container">
 
@@ -145,7 +172,7 @@
 
 
     <div class="row">
-            <div class="col ">
+            <div class="col">
                 <div class="wow cherta animate__animated animate__rotateInUpRight"><img src="img/cherta.png" alt="cherta"></div>
             </div>
     </div>
@@ -316,20 +343,19 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-between">
             <div class="col-2"><p>стоимость: </p></div>
                 <div class="col-2" id="js-result"></div>
-                    
-            
         </div>
-        <div class="row">
-            <div class="col-2">
-                <p>сроки: <div id="js-result2"></div></p>
-            </div>
+        <div class="row justify-content-between">
+            <div class="col-2"><p>сроки: </p></div>
+                <div class="col-2" id="js-result2"></div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <input id="js-button" type="button" value=" оставить заявку ">
+                <input id="js-button" class="w=30" type="button" value=" расчитать ">
+                <input id="js-button2" class="w=30" type="button" value=" оставить заявку ">
+            </div>
             </div>
         </div>
     </div>
@@ -391,33 +417,37 @@
                 <h3 class="wow animate__animated animate__rollIn">Отзывы</h3>
             </div>
         </div>
-
         <div class="row">
             <div class="col">
                     <div class="wow cherta animate__animated animate__rotateInUpRight"><img src="img/cherta.png" alt="cherta"></div>
             </div>
         </div>
+        <div class="row slider" >
+      
+                <div id="text_slide1"><img src="img/men.jpg" alt="men.jpg">
+                    <p>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
+                    <p>Андрей В. директор АО Газпрём</p></div>
+                <div id="text_slide2"><img src="img/scull32px.png" alt="men.jpg">
+                    <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
+                    <p>Максим В. директор АО Газпрём</p></div>
+                <div id="text_slide3"><img src="img/smile.jpg" alt="men.jpg">
+                    <p>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
+                    <p>Николай В. директор АО Газпрём</p></div>
+                <div id="text_slide4"><img src="img/men.jpg" alt="men.jpg">
+                    <p>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
+                    <p>Олег В. директор АО Газпрём</p></div>
+                <div id="text_slide5"><img src="img/men.jpg" alt="men.jpg">
+                    <p>5Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
+                    <p>Виктор В. директор АО Газпрём</p></div>
 
-        <div class="row">
-            <div class="col">
-                    <div class="cherta"><img src="img/men.jpg" alt="men.jpg"></div>
-            </div>
-        </div>
+                
+                 <!--   <img src="img/men.jpg" alt="men.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
+                    <p>Максим В. директор АО Газпрём</p> -->
+    </div>
+            
 
-        <div class="row">
-            <div class="col">
-                    <p class="element-animation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa itaque cumque suscipit aliquam minus tenetur quaerat deserunt error voluptatum.</p>
-                    <p>Максим В. директор АО Газпрём</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                    <div class="punkt"><img src="img/punkt_orang.png" alt="1">
-                    <img src="img/punkt_grey.png" alt="2">
-                    <img src="img/punkt_grey2.png" alt="3"></div>
-            </div>
-        </div>
+        
     </div>
 </section>
 

@@ -748,3 +748,15 @@ section.active2 {   /*animation action menu*/
 .benefits__number {
     opacity: 0;
 }
+
+/*text-slider*/
+#text_slide1, #text_slide2, #text_slide3, #text_slide4, #text_slide5{
+    position: absolute;
+    left: 0px;
+    opacity:0;
+    text-align: center;
+    height: 100px;
+    width: 90%;
+    margin-top: 30px;
+    padding-left: 30px;
+}
