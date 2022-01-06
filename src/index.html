@@ -96,12 +96,12 @@
 
 <section class="obomne section" id="obomneID">
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
   Скидка! нажми здесь!
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -345,21 +345,79 @@
 
         <div class="row justify-content-between">
             <div class="col-2"><p>стоимость: </p></div>
-                <div class="col-2" id="js-result"></div>
+                <div name="js-result" class="col-2" id="js-result"></div>
         </div>
         <div class="row justify-content-between">
             <div class="col-2"><p>сроки: </p></div>
-                <div class="col-2" id="js-result2"></div>
+                <div name="js-result2" class="col-2" id="js-result2"></div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <input id="js-button" class="w=30" type="button" value=" расчитать ">
-                <input id="js-button2" class="w=30" type="button" value=" оставить заявку ">
+                <input id="js-button" type="button" value=" расчитать ">
+                <input id="js-button2" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value=" оставить заявку ">
             </div>
             </div>
         </div>
     </div>
-</section>
+
+</section> 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Заказ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    <div class="modal-body">
+    <form action="php/mail.php" method="post" class="form-gruop">
+        <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email адрес</label>
+        <input required name="user_mail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+        <label for="inputtel" class="form-label">Телефон</label>
+        <input required name="user_tel" id="inputtel" type="tel" class="form-control">
+        </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                нажмите да
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                или нет
+              </label>
+            </div>
+
+        <div class="mb-3 form-check">
+        <input required name="check1" type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">
+        Поставьте галочку</label>
+        </div>
+
+       
+        <button type="submit" class="mb-3 btn btn-primary">Отправить</button>
+    </form>
+    </div>
+
+
+    
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+       <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+    </div>
+    </div>
+    </div>
+    </div>
+ 
+
 
 <section class="stat section" id="statID">
     <div class="container">
@@ -449,6 +507,11 @@
 
         
     </div>
+
+
+
+
+ 
 </section>
 
 
@@ -499,29 +562,27 @@
                 </div>
             </div>
         </div>
-
+        <form id="fomrFooter" action="php/mail.php" method="post">
         <div class="row">
             <div class="col w-25">
-                    <!-- <input type="text" name="text_input" value="" placeholder=" имя" class="finput"> -->
-                    <input class="form-control" type="text" placeholder=" имя " aria-label="default input example">
+                    <input name="user_name_footer" id="inputNameFooter" required class="form-control" type="text" placeholder=" имя " aria-label="default input example">
             </div>
             <div class="col w-25">
-                <!-- <input type="text" name="text_input" value="" placeholder=" Email" class="finput" id="mail" > -->
-                <input class="form-control" type="text" placeholder=" Email" aria-label="default input example">
+                <input name="user_mail_footer" id="inputMailFooter" required class="form-control" type="email" placeholder=" Email " aria-label="default input example">
             </div>
         </div>
         <div class="row">
             <div class="col mt-3">
-                <!-- <textarea name="text" placeholder="Текст сообщения"></textarea> -->
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Текст сообщения"></textarea>
+                <textarea name="user_text_footer" required class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Текст сообщения"></textarea>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <div class="clupdiv"><input type="reset" value="отправить" class="clup"></div>
+                <div class="clupdiv"><input id="submitFooter" type="submit" value="отправить" class="clup"></div>
             </div>
         </div>
+        </form>
 
         <div class="row">
             <div class="col w-100">
@@ -572,6 +633,10 @@
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.spincrement.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<!--<script src="js/jquery.maskedinput.min.js"></script>-->
+
+<!--<script src="js/jquery.inputmask.min.js"></script>-->
 <script src="js/myScript.js"></script>
 </body>
 </html>
