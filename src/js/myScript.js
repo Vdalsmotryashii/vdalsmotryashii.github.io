@@ -1,5 +1,12 @@
 "use strict"
 
+//mask
+$(document).ready(function(){
+$('#inputtel').mask('+7(999) 999-9999');
+});
+
+
+
 //wow
 new WOW().init();
 
@@ -181,3 +188,33 @@ if (t == 0){
 
 });
 });
+
+
+
+//проверка заполнености формы перед отправкой
+//$(document).ready(function(){
+//	$('form').submit(function(event){
+//		if ($('#inputtel').val() == "" || $('#exampleInputEmail1').val() == ""){
+//			event.preventDefault();
+//			alert("Введите данные");
+//		}
+		
+//	});
+//});
+//проверка заполнености формы перед отправкой
+//$(document).ready(function(){
+//	$('form').submit(function(event){
+//		if ($('#inputNameFooter').val() == "" || $('#inputMailFooter').val() == "" || $('#exampleFormControlTextarea1').val() == ""){
+//			event.preventDefault();
+//			alert("Введите данные");
+//		}
+//		
+//	});
+//});
+//очистка формы после отправки
+// $("form").submit(function(){
+  // $(this).find("input[type=text], select").val("");
+  // $(this).find("input[type=email], select").val("");
+  // $(this).find("textarea, select").val("");
+  // $(this).find("input[type=tel], select").val("");
+// });
