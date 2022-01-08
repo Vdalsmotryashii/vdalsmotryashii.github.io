@@ -98,12 +98,17 @@ nav{
     color: #fff;
     font-size: 17px;
     line-height: 60px;
+    text-decoration: none;
 
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
     font-family: 'FranklinGot';
+}
+.logo a{
+    text-decoration: none;
+    color: white;
 }
 main{
     width: 100%;
@@ -188,7 +193,8 @@ section.active2 {   /*animation action menu*/
 .main{
     width: 100%;
     height: 100%;
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg2.jpg) center/cover no-repeat;
+    background: url(../img/boy_ya.png) 100% 100%/auto 85% no-repeat , url(../img/bg2.jpg) center/cover no-repeat;
+    min-width: 370px;
 }
 
 .title__container{
@@ -483,8 +489,13 @@ section.active2 {   /*animation action menu*/
 }
 
 .raschet{
+    max-width: 600px;
+    min-height: 250px;
+    min-height: 600px;
     width: 65%;
-    height: 600px;
+    
+    
+    
 
     /*margin: 100px 300px 0px 300px;
     margin-top: 20px;*/
@@ -496,11 +507,12 @@ section.active2 {   /*animation action menu*/
     box-shadow:2px 3px 4px 2px #efefef;
 }
 
+
 .raschet_main{
     font-size: 30px;
     text-align: center;
     font-weight: bold;
-    padding: 50px;
+    padding: 20px;
 }
 .raschet_main:hover{
     transform: scale(1.1);
@@ -549,6 +561,7 @@ section.active2 {   /*animation action menu*/
     border-radius: 5px;
     color: white;
     padding: 5px;
+    
 
     font-size: 13px;
     text-align: center;
@@ -557,6 +570,7 @@ section.active2 {   /*animation action menu*/
 }
 .raschet input:active{
     transform: scale(1.1);
+    position: relative;
 }
 
 .stat{
@@ -578,7 +592,7 @@ section.active2 {   /*animation action menu*/
     transform: scale(1.1);
 }
 .otziv{
-    width: 100%;
+    width: 90%;
     height: 580px;
     text-align: center;
     margin: auto;
