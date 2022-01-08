@@ -1,9 +1,10 @@
 "use strict"
 
 //mask
-$(document).ready(function(){
-$('#inputtel').mask('+7(999) 999-9999');
-});
+//$(document).ready(function(){
+$("#inputtel").mask("+7(999) 999-9999");    
+//$('#inputtel').mask('+7(999) 999-9999');
+//});
 
 
 
