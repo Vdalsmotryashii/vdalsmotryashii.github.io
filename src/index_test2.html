@@ -10,9 +10,9 @@
     <meta property="ogititle">
     <!--openGraph-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="img/photo_ico.ico" type="image/x-icon">
-    <title>Германн К - Веб-разработчик</title>
+    <link rel="shortcut icon" href="img/scull32px.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/scull32px.png" type="image/x-icon">
+    <title>Вдальсмотрящий - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-xxl-2 col-lg-3 col-7">
-                    <div class="logo"><a href="index.html">Германн К</a></div>
+                    <div class="logo">Германн Вдальсмотрящий</div>
                 </div>
                 <div class="col-xxl-6 col-xl-7 col-lg-8 float-right offset-lg-1 d-none d-lg-block">
                     <div class="menu ml-5 pl-5 w-100" id="#menuID">
@@ -79,15 +79,15 @@
 
 
 
-<section class="main" > 
-    <div class="container ">
-        <div class="row align-items-center ">
+<section class="main">
+    <div class="container h-100">
+        <div class="row align-items-center h-100">
            <div class="col-lg-6 mt-5 pt-5">
                 <div class="title__container mt-5">
-                    <h1>Привет <br> Я Германн К </h1>
+                    <h1>Привет <br> Я Германн Вдальсмотрящий </h1>
                     <h4><i class="fa fa-css3 custom-css3" aria ></i>Фул стек веб-разработчик</h4>
-                    <a href="#obomneID"><input type="button" value=" Обо мне "></a>
-                    <a href="#keysID"><input type="button" value=" Мои работы "></a>
+                    <input type="button" value=" Обо мне " form="#obomneID">
+                    <input type="button" value=" Мои работы " form="#keysID">
                 </div>
             </div>
         </div>
@@ -96,12 +96,12 @@
 
 <section class="obomne section" id="obomneID">
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Скидка! нажми здесь!
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -278,7 +278,7 @@
                     <p>какая-то компания</p>
                     <h4>WEBSITE:<br></h4>
                     <p>www.blablabla.com</p>
-                    <a href="Portfolio.html"><input type="button" value=" VISIT LIVE SITE "></a>
+                    <input type="button" value=" VISIT LIVE SITE ">
                 </div>
             </div>
             <div class="col-xl-10 order-xl-last col-lg-10 order-lg-last col-md-12 order-md-first col-sm-12 order-sm-first col-12 order-first">
@@ -305,9 +305,9 @@
                 <div><h3 class="raschet_h3 text-start">тип сайта</h3></div>
                 <select id="siteR" class="select">
                   <option >Выберите пункт...</option>
-                  <option value="5000">сайт-визитка</option>
-                  <option value="7000">лендинг</option>
-                  <option value="10000">интернет-магазин</option>
+                  <option value="100">сайт-визитка</option>
+                  <option value="200">лендинг</option>
+                  <option value="300">интернет-магазин</option>
                 </select>
             </div>
         </div>
@@ -317,9 +317,9 @@
                 <h3 class="raschet_h3 text-start">дизайн</h3>
                 <select id="designR" class="select">
                   <option>Выберите пункт...</option>
-                  <option value="0">простой</option>
-                  <option value="2500">сложный</option>
-                  <option value="3000">WOW-дизайн</option>
+                  <option value="50">простой</option>
+                  <option value="60">сложный</option>
+                  <option value="70">WOW-дизайн</option>
                 </select>
             </div>
         </div>
@@ -331,7 +331,7 @@
                 <select id="adaptabilityR" class="select">
                   <option>Выберите пункт...</option>
                   <option value="0">не адаптивный</option>
-                  <option value="1000">адаптивный</option>
+                  <option value="10">адаптивный</option>
                 </select>
 
             </div>
@@ -345,81 +345,21 @@
 
         <div class="row justify-content-between">
             <div class="col-2"><p>стоимость: </p></div>
-                <div name="js-result" class="col-2" id="js-result"></div>
+                <div class="col-2" id="js-result"></div>
         </div>
         <div class="row justify-content-between">
             <div class="col-2"><p>сроки: </p></div>
-                <div name="js-result2" class="col-2" id="js-result2"></div>
+                <div class="col-2" id="js-result2"></div>
         </div>
         <div class="row">
             <div class="col text-center">
-                <input id="js-button" type="button" value=" расчитать ">
-                <input id="js-button2" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value=" оставить заявку ">
+                <input id="js-button" class="w=30" type="button" value=" расчитать ">
+                <input id="js-button2" class="w=30" type="button" value=" оставить заявку ">
             </div>
             </div>
         </div>
-    
-
-</section> 
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Заказ</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-    <div class="modal-body">
-    <form action="php/mail_send.php" method="POST" class="form-gruop">
-        <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email адрес</label>
-        <input required name="user_mail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-
-        <div class="mb-3">
-        <label for="inputtel" class="form-label">Телефон</label>
-        <input required name="user_tel" id="inputtel" type="tel" class="form-control">
-        </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              <label class="form-check-label" for="exampleRadios1">
-                нажмите да
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                или нет
-              </label>
-            </div>
-
-        <div class="mb-3 form-check">
-        <input required name="check1" type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">
-        Поставьте галочку</label>
-        </div>
-        
-        
-         <input type="submit" class="mb-3 btn btn-primary" value="Отправить">
-
-      <!--  <button type="submit" class="mb-3 btn btn-primary">Отправить</button>-->
-    </form>
     </div>
-
-
-    
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        
-       <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-    </div>
-    </div>
-    </div>
-    </div>
- 
-
+</section>
 
 <section class="stat section" id="statID">
     <div class="container">
@@ -509,11 +449,6 @@
 
         
     </div>
-
-
-
-
- 
 </section>
 
 
@@ -547,7 +482,7 @@
 
             <div class="col-3 text-center">
                     <a href="mailto:vdalsmotryashii@gmail.com"><img src="img/mail.png" alt="mail"></a>
-                    <p><a class="mycontact" href="mailto:germannkk@gmail.com">germannkk@gmail.com</a></p>
+                    <p><a class="mycontact" href="mailto:vdalsmotryashii@gmail.com">vdalsmotryashii@gmail.com</a></p>
             </div>
 
             <div class="col-3 text-center">
@@ -564,27 +499,29 @@
                 </div>
             </div>
         </div>
-        <form id="fomrFooter" action="php/mail_send2.php" method="post">
+
         <div class="row">
             <div class="col w-25">
-                    <input name="user_name_footer" id="inputNameFooter" required class="form-control" type="text" placeholder=" имя " aria-label="default input example">
+                    <!-- <input type="text" name="text_input" value="" placeholder=" имя" class="finput"> -->
+                    <input class="form-control" type="text" placeholder=" имя " aria-label="default input example">
             </div>
             <div class="col w-25">
-                <input name="user_mail_footer" id="inputMailFooter" required class="form-control" type="email" placeholder=" Email " aria-label="default input example">
+                <!-- <input type="text" name="text_input" value="" placeholder=" Email" class="finput" id="mail" > -->
+                <input class="form-control" type="text" placeholder=" Email" aria-label="default input example">
             </div>
         </div>
         <div class="row">
             <div class="col mt-3">
-                <input name="user_text_footer" type="text" required class="form-control" id="exampleFormControlTextarea1" placeholder="Текст сообщения">
+                <!-- <textarea name="text" placeholder="Текст сообщения"></textarea> -->
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Текст сообщения"></textarea>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <div class="clupdiv"><input id="submitFooter" type="submit" value="отправить" class="clup"></div>
+                <div class="clupdiv"><input type="reset" value="отправить" class="clup"></div>
             </div>
         </div>
-        </form>
 
         <div class="row">
             <div class="col w-100">
@@ -635,11 +572,6 @@
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.spincrement.min.js"></script>
-
-<script src="js/jquery.mask.min.js"></script>
-<!--<script src="js/jquery.maskedinput.min.js"></script>-->
-<!--<script src="js/jquery.inputmask.min.js"></script>-->
-
 <script src="js/myScript.js"></script>
 </body>
 </html>
