@@ -145,13 +145,13 @@ $('#js-button').click(function(){
 
     let value1 = $('#siteR').val();
 
-        if (value1 == '100'){
+        if (value1 == '5000'){
             t = 1;
         }
-        else if (value1 == '200'){
+        else if (value1 == '7000'){
             t = 2;
         }
-        else if (value1 == '300'){
+        else if (value1 == '10000'){
             t = 3;
         };
        
@@ -159,13 +159,13 @@ $('#js-button').click(function(){
 
 //        
     let value2 = $('#designR').val();
-        if (value2 == '50'){
+        if (value2 == '0'){
             t += 0;
         }
-        else if (value2 == '60'){
+        else if (value2 == '2500'){
             t += 2;
         }
-        else if (value2 == '70'){
+        else if (value2 == '3000'){
             t += 3;
         };
        
@@ -176,7 +176,7 @@ $('#js-button').click(function(){
         if (value3 == '0'){
             t += 0;
         }
-        else if (value3 == '10'){
+        else if (value3 == '1000'){
             t += 1;
         };
         console.log(t);
